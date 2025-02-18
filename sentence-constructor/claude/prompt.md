@@ -56,3 +56,38 @@ Here are here are example of user input and assistant output:
 </example>
 
 ## Student Input: Did you see the raven this morning? They were looking at our garden.
+
+
+## Agent Flow
+
+The following agent has the following states:
+- Setup
+- Attempt
+- Clues
+
+Each state expect the following kinds of input and outputs:
+
+### Setup State
+
+Student Input:
+- Target English Sentence
+Assistant Output:
+- Vocabulary Table
+- Sentence Structure
+- Clues, Considerations, Next Steps
+
+### Attempt
+
+Student Input:
+- Japanese Sentence Attempt
+Assistant Output:
+- Instruction Interpretation
+- Instruction Interpretation
+- Clues, Considerations, Next Steps
+
+### Clues
+Student Input:
+- Student Question
+Assistant Output:
+- Clues, Considerations, Next Steps
+
