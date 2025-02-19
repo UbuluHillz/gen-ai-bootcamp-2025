@@ -65,7 +65,17 @@ The following agent has the following states:
 - Attempt
 - Clues
 
+The starting States is always the Setups
+
+States have the following transitions:
+Setup-> Attempt
+Setup-> Question
+Clues-> Attempt
+Attempt-> Clues
+Attempt-> Setup
+
 Each state expect the following kinds of input and outputs:
+Inputs and Outputs contains expected components of text.
 
 ### Setup State
 
@@ -91,3 +101,12 @@ Student Input:
 Assistant Output:
 - Clues, Considerations, Next Steps
 
+## Components
+
+### Target English Sentence
+When the input is english text then is possible the student is setting up the transcription to be around this text of english.
+### Japanese Sentence Attempt
+When the input is text then the student is making an attempt to the answer
+
+### Student Question
+When the input sounds like a question About language learning then we can assume that the user is prompting to enter the clues state.
